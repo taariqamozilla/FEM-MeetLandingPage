@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;900&display=swap');
+
+:root{
+    --primary: #4D96A9;
+    --secondary: #855FB1;
+    --blueaccent: #8FE3F9;
+    --purpleaccent: #D9B8FF;
+    --headertext: #28283D;
+    --text: #87879D;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    text-align: center;
+}
+
+h1, h2{
+    color: var(--headertext)
+}
+
+h2{
+    font-size: 44px;
+
+}
+
+h3{
+    color: var(--primary);
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 4px;
+}
+
+p{
+    color: var(--text);
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 60px;
+}
+
+.hero{
+    display: flex;
+}
+
+.circlecontainer{
+    display: flex;
+    position: relative;
+    top: 50px;
+}
+.cc1{
+    left: -40px;
+}
+.cc2{
+    right: -40px;
+}
+.cc1 .circle{
+    margin-right: 32px;
+}
+.cc2 .circle{
+    margin-left: 32px;
+}
+
+.circle{
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;
+    background-color: var(--primary);
+    margin-bottom: 28px;
+}
+.verticalline{
+    border-left: 1px solid var(--text);
+    height: 84px;
+    margin: 0 auto;
+    width: 0px;
+}
+.altcircle{
+    width: 55px;
+    height: 55px;
+    border: 1px solid var(--text);
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 64px;
+    display: grid;
+    place-content: center;
+    background-color: white;
+}
+.altcircle p{
+    font-weight: 800;
+}
+.up{
+    position: relative;
+    bottom: 55px;
+}
+.down{
+    position: relative;
+    top: 55px;
+}
+.middle{
+    margin: 0 auto;
+    width: 540px;
+}
+
+.herosub{
+    max-width: 540px;
+    margin-bottom: 32px;
+}
+
+h1{
+    font-size: 64px;
+
+}
+
+.button{
+    padding: 16px;
+    border-radius: 50px;
+    color: white;
+    text-decoration: none;
+}
+
+.blueaccent{
+    color: var(--blueaccent);
+}
+
+.main{
+    background-color: var(--primary);
+}
+
+.alt{
+    background-color: var(--secondary);
+}
+
+.section2{
+    margin-top: 110px;
+}
+
+.section3{
+    margin-top: 180px;    
+}
+
+.imagecontainer{
+    margin: 0 auto;
+    max-width: 1100px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+.image{
+    width: auto;
+    height: 250px;
+    background-color: var(--primary);
+    border-radius: 8px;
+    
+}
+
+.sub{
+    margin: 0 auto;
+    margin-top: 32px;
+    max-width: 540px;
+}
