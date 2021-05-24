@@ -215,7 +215,7 @@ img{
 
 /*Tablet*/
 
-@media screen and (max-width: 1086px) {
+@media screen and (max-width: 1202px) {
     .hero{
         flex-wrap: wrap;
     }
