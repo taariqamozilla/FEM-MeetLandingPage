@@ -242,6 +242,14 @@ img{
     .middle{
         margin-top: 72px;
     }
+    .middle p{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .middle h1{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
     .hero-image-tablet{
         display: inline;
         width: 100%;
@@ -265,10 +273,18 @@ img{
     }
     .imagecontainer{
         grid-template-columns: repeat(2, 1fr);
-        margin: 40px;
+        max-width: 800px;
+        margin: 0 auto;
     }
     .image{
         height: 0px;
         padding-top: 100%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .imagecontainer{
+        margin-left: 40px;
+        margin-right: 40px;
     }
 }
