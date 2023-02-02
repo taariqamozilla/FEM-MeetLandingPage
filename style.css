@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;900&display=swap');
 
 :root{
-    --primary: #4D96A9;
+    --primary: rgb(77, 150, 169);
     --secondary: #855FB1;
     --blueaccent: #8FE3F9;
     --purpleaccent: #D9B8FF;
@@ -192,7 +192,23 @@ img{
     height: 250px;
     background-color: var(--primary);
     border-radius: 8px;
+    position: relative;
     
+}
+
+.image:after {
+    content:'\A';
+    border-radius: 8px;
+    position:absolute;
+    width:100%; height:100%;
+    top:0; left:0;
+    background:rgba(77, 150, 169, 0.6);
+    opacity:0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+.image:hover:after {
+    opacity:1;
 }
 
 .sub{
